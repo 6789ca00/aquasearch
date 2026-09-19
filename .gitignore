@@ -37,5 +37,12 @@ yarn-error.log*
 .vercel
 
 # typescript
-*.tsbuildinfo
+*.tsbuildinfogit status
 next-env.d.ts
+
+# crawler
+/aquasearch_crawler/
+
+# Supabase local data
+/supabase/seed.sql
+/supabase/snippets/

@@ -1,0 +1,253 @@
+/* 판매 상태 */
+
+.filter-wrapper {
+  position: relative;
+}
+
+.filter-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 110px;
+  padding: 6px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+.filter-option {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: #555;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.filter-option:hover {
+  background: #f5f5f5;
+}
+
+.filter-option.active {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+.filter-option.on-sale {
+  color: #16834b;
+}
+
+.filter-option.sold-out {
+  color: #ff0303;
+}
+
+/* 판매 상태 */
+
+
+/* 쇼핑몰 */
+
+.shop-filter-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 180px;
+  padding: 6px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+.shop-filter-option {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: #555;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.shop-filter-option:hover {
+  background: #f5f5f5;
+}
+
+.shop-filter-option.active {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+.shop-filter-option input {
+  margin: 0 8px 0 0;
+}
+
+.shop-filter-footer {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid #eee;
+}
+
+.shop-filter-apply {
+  width: 100%;
+  height: 32px;
+  border: none;
+  border-radius: 4px;
+  background: #222;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.shop-filter-apply:hover {
+  background: #444;
+}
+
+.shop-modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 100;
+}
+
+.shop-modal {
+  width: 100%;
+  max-width: 420px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.shop-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.shop-modal-header h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.shop-modal-close {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #777;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.shop-modal-close:hover {
+  color: #222;
+}
+
+.shop-modal-content {
+  overflow-y: auto;
+  padding: 10px 12px;
+}
+
+.shop-option {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 42px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: #555;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.shop-option:hover {
+  background: #f5f5f5;
+}
+
+.shop-option input {
+  width: 16px;
+  height: 16px;
+  margin: 0 10px 0 0;
+}
+
+.shop-option.active {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+.shop-all {
+  border: none;
+  background: transparent;
+  text-align: left;
+}
+
+.shop-all:hover {
+  background: #f5f5f5;
+}
+
+.shop-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 12px 20px;
+  border-top: 1px solid #eee;
+}
+
+.shop-modal-cancel,
+.shop-modal-apply {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.shop-modal-cancel {
+  border: 1px solid #ddd;
+  background: white;
+  color: #555;
+}
+
+.shop-modal-cancel:hover {
+  background: #f5f5f5;
+}
+
+.shop-modal-apply {
+  border: 1px solid #222;
+  background: #222;
+  color: white;
+}
+
+.shop-modal-apply:hover {
+  background: #444;
+}
+
+@media (max-width: 600px) {
+  .result-controls {
+    width: 100%;
+  }
+
+  .filter-button,
+  .sort-button {
+    flex: 1;
+  }
+}
